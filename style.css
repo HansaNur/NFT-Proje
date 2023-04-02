@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@700&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Inter', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Unbounded', cursive; */
+
+/*#191825 #700961 #B80D57 #E03E36 #FF7C38 #FFBF9B #B46060 #FF5858*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 60px;
+  background-color: #191825;
+  color: aliceblue;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* ÜST KISIM */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  position: sticky;
+  top: 0;
+  background-color: #191825;
+  z-index: 1;
+}
+
+header h1 {
+  font-family: 'Unbounded', cursive;
+}
+
+nav {
+  display: flex;
+  gap: 40px;
+}
+
+nav a {
+  color: aliceblue;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: #B80D57;
+  text-shadow: 2px 2px 20px #B80D57;
+  transition: all 0.3s;
+}
+
+header button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 66px;
+  color: aliceblue;
+  background: linear-gradient(225deg, #700961 0%, #B80D57 50%, #E03E36 100%);
+}
+
+header button:hover {
+  font-size: 15px;
+}
+
+/* KARŞILAMA ALANI */
+.hero {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 60px 0;
+}
+
+/* SOL TARAF */
+.hero .left {
+  max-width: 700px;
+}
+
+.hero .left h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 70px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.hero .left h1 span {
+  color: #B80D57;
+  text-shadow: 1px 1px 3px aliceblue;
+}
+
+.hero .left h1:hover{
+  font-size: 73px;
+  text-shadow: 1px 1px 10px #B80D57;
+}
+
+.left-info {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+  padding-left: 70px;
+}
+
+.left-info div {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(150deg, #B80D57 10%, #E03E36 100%);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.left-info div:hover {
+  background: linear-gradient(230deg, #B80D57 10%, #E03E36 100%);
+  font-size: 17px;
+}
+
+.left-info p {
+  max-width: 400px;
+  text-align: center;
+}
+
+/* SAG TARAF */
+.hero .right {
+  max-width: 700px;
+}
+
+.hero .right img {
+  width: 100%;
+}
+
+/* MARKALAR */
+.brands {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0;
+  gap: 40px;
+}
+
+/* DROPLAR */
+.drops-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.drops-sec h1 {
+  font-size: 45px;
+  font-family: 'Inter', sans-serif;
+  color: aliceblue;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.categories li {
+  list-style: none;
+  background-color: rgb(149, 148, 148);
+  padding: 10px 20px;
+  border-radius: 40px;
+  cursor: pointer;
+
+}
+
+.categories li:hover {
+  background: linear-gradient(230deg, #B80D57 10%, #E03E36 100%);
+  font-size: 17px;
+}
+
+/* KARTLAR */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1500px;
+}
+
+@media (min-width:730px) {
+  .cards {
+    justify-content: center;
+  }
+}
+
+
+/* Kart */
+.card {
+  width: 280px;
+  min-height: 400px;
+  background-color: aliceblue;
+  color: #191825;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-info .price {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.card-info .price p {
+  color: rgb(132, 91, 200);
+  font-weight: 600;
+}
+
+.card-info .price img {
+  width: 25px;
+}
+
+/* .card-info small {} */
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(208, 207, 207);
+  padding-top: 20px;
+}
+
+.card-footer p {
+  background-color: rgb(222, 222, 222);
+  color: rgb(132, 91, 200);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.card-footer button {
+  border: none;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  padding: 5px 5px;
+  font-family: 'Poppins', sans-serif;
+  color: #E03E36;
+  cursor: pointer;
+}
+
+.card-footer button:hover {
+  background: linear-gradient(125deg, #E03E36, #FF7C38);
+  color: aliceblue;
+  padding: 7px 7px;
+  border-radius: 10px;
+}
+
+/* REKLAM ALANI */
+.ad {
+  background: linear-gradient(125deg, #FF7C38 10%, #E03E36 50%, #FF7C38 100%);
+  margin: 100px -120px;
+  text-align: center;
+  font-size: 90px;
+  font-weight: 600;
+  transform: rotate(-8deg);
+  letter-spacing: 15px;
+  white-space: nowrap;
+  font-family: 'Lato', serif;
+  text-shadow: 1px 1px 5px aliceblue;
+  cursor: pointer;
+  overflow: hidden;
+  
+}
+
+/* BİLGİ KUTUCUKLARI */
+.info-sec {
+  margin: 200px 0;
+}
+
+.info-sec h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.info-card {
+  background: linear-gradient(180deg, #700961 20%, #191825 100%);
+  /* box-shadow: #B80D57 1px 1px 15px; */
+  border-radius: 15px;
+  margin-bottom: 50px;
+  padding: 30px 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+}
+
+.info-card img {
+  width: 50px;
+}
+
+.nav-button {
+  display: none
+}
+
+
+
+
+/* MOBİL UYUMLU (responsive)YAPMA */
+
+/* 800px'den küçük cihazlar */
+@media (max-width: 900px) {
+    .cards {
+      justify-content: center;
+    }
+    nav {
+      display: none;
+    }
+    .contact-btn {
+      display: none;
+    }
+    .nav-button {
+      display: block;
+    }
+    .left-info div {
+      padding: 0 30px;
+    }
+  }
+
+/* 1300px den büyük cihazlar icin */
+@media (min-width: 1300px) {
+  .hero .left {
+    max-width: 900px;
+  }
+
+  .left-info p {
+    max-width: 500px;
+  }
+}
+
+/* 1500px den kücük cihazlar icin */
+@media (max-width: 1500px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero .left {
+    max-width: 900px;
+  }
+
+  .hero .right {
+    order: -1;
+  }
+
+  .info-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
