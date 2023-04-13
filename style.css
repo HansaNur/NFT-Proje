@@ -35,6 +35,7 @@ header {
   top: 0;
   background-color: #191825;
   z-index: 1;
+  width: 100% !important;
 }
 
 header h1 {
@@ -100,6 +101,7 @@ header button:hover {
 .hero .left h1:hover{
   font-size: 73px;
   text-shadow: 1px 1px 10px #B80D57;
+  transition: all 0.3s;
 }
 
 .left-info {
